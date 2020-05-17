@@ -32,12 +32,6 @@ amount_earned = time_elapsed * 5
 print("The amount of money accrued today is " "$ ",amount_earned)
 
 
-#myData = [[start_project, end_project, time_elapsed, amount_earned]]
-#myFile = open('NanaWages.csv', 'a')
-#with myFile:
-#    writer = csv.writer(myFile)
-#    writer.writerows(myData)
-
 with open('Nana_Earnings.csv','a',newline = '') as f:
     fieldnames = ['Project_id','Kick_Start','End','Time_taken','Amount_Accrued']
     writer = csv.DictWriter(f,fieldnames = fieldnames)
